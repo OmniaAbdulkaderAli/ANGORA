@@ -1,0 +1,488 @@
+:root {
+    --main-color: #f25454;
+}
+
+
+
+.container {
+    width: 85%;
+}
+
+.clear {
+    clear: both;
+}
+
+.inner div {
+    margin-right: 3px;
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+}
+
+.tomato {
+    background-color: tomato;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.babeblue {
+    background-color: rgb(52, 103, 197);
+}
+
+.purble {
+    background-color: violet;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+p {
+    color: #999;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
+}
+
+html {
+    font-size: 16px;
+}
+
+hr {
+    width: 40px !important;
+    margin: auto;
+    border-color: black;
+    opacity: 1;
+    transition: width .5s ease;
+}
+
+section:hover hr {
+    width: 60px !important
+}
+
+h1 {
+    font-size: 4.5rem;
+    width: 40%;
+    text-align: center;
+    color: #fff
+}
+
+h2 {
+    position: relative;
+    font-size: 2.5rem;
+    font-weight: 800;
+    padding-bottom: 15px;
+}
+
+.setting {
+    position: fixed;
+    z-index: 3;
+    top: 0px;
+    left: -300px;
+    transition: all 0.7s ease;
+}
+
+.setting:hover {
+    left: 0;
+}
+
+.setting .inner {
+    width: 300px;
+}
+
+.setting h4 {
+    border-top: thin solid #777;
+    ;
+}
+
+header .carousel-control-next .carousel-control-next-icon:hover {
+    background-color: rgba(0, 0, 0, 0.411);
+}
+
+header .carousel-control-prev .carousel-control-prev-icon {
+    background-color: rgba(0, 0, 0, 0.411);
+}
+
+header {
+    position: relative;
+}
+
+header .carousel-indicators {
+    justify-self: center;
+    align-self: center;
+}
+
+header .bg1 {
+    height: 100vh;
+    background: url('../images/slideshow-1.jpg');
+    background-size: cover;
+}
+
+header .bg2 {
+    height: 100vh;
+    background: url('../images/slideshow-2.jpg');
+    background-size: cover;
+}
+
+header .bg3 {
+    height: 100vh;
+    background: url('../images/slideshow-3.jpg');
+    background-size: cover;
+}
+
+header .carousel-control-next {
+    top: -100px;
+}
+
+header nav {
+    border-bottom: thin solid rgba(214, 206, 206, 0.37);
+}
+
+header nav ul li {
+    padding-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff !important;
+    font-size: .9rem;
+    ;
+}
+
+header nav ul .active a,
+nav ul li:hover a {
+    color: var(--main-color) !important;
+}
+
+header .carousel-control-prev .carousel-control-prev-icon {
+    border: thin solid #fff;
+}
+
+header .carousel-control-next .carousel-control-next-icon {
+    border: thin solid #fff;
+}
+
+header .down {
+    width: 25px;
+    height: 40px;
+    border-radius: 45%;
+    border: 1px solid #fff;
+    text-align: inherit;
+    position: relative;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.616);
+    border-radius: 50%;
+    animation: dot 3s infinite;
+    position: absolute;
+}
+
+@keyframes dot {
+    from {
+        top: 0;
+        opacity: 1;
+    }
+
+    to {
+        top: 70%;
+        opacity: .1;
+    }
+}
+
+
+section.about h2::before {
+    content: "A";
+    position: absolute;
+    opacity: .1;
+    text-align: center;
+    font-size: 3rem;
+    right: 0;
+    left: 0;
+    top: -16px;
+}
+
+
+.progress-heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.one {
+    width: 80%;
+}
+
+.tow {
+    width: 95%;
+}
+
+.three {
+    width: 85%;
+}
+
+.four {
+    width: 70%;
+}
+
+.progress {
+    height: 5px
+}
+
+section.team h2::before {
+    content: "O";
+    position: absolute;
+    opacity: .1;
+    text-align: center;
+    font-size: 5rem;
+    right: 0;
+    left: 0;
+    top: -30px;
+}
+
+section.team span {
+    font-size: .8rem;
+    color: #999
+}
+
+section.team .imgholder {
+    overflow: hidden;
+}
+
+section.team .imgholder img {
+    transition: all .6s ease;
+}
+
+section.team .imgholder:hover img {
+
+    transform: scale(1.2);
+}
+
+
+
+section.team .imgholder .layout {
+    visibility: hidden;
+}
+
+section.team .imgholder:hover .layout {
+    visibility: visible;
+}
+
+section.team ul .nav-item a {
+    color: #fff;
+    opacity: 1;
+}
+
+section.team .col-lg-3:hover h6 {
+    color: var(--main-color)
+}
+
+section.team button {
+    background-color: var(--main-color);
+}
+
+section.services,
+section.touch {
+    background-color: #fafafa;
+}
+
+section.services i {
+    color: var(--main-color);
+    ;
+}
+
+section.services .parent p {
+    font-size: .8rem;
+}
+
+section.services .parent {
+    transition: all .7s ease;
+}
+
+section.services .parent:hover h4 {
+    color: var(--main-color);
+}
+
+section.services h2::before {
+    content: "S";
+    position: absolute;
+    opacity: .1;
+    text-align: center;
+    font-size: 5rem;
+    right: 0;
+    left: 0;
+    top: -30px;
+}
+
+section.review{
+    overflow-x: hidden!important;
+}
+section.review h2::before {
+    content: "C";
+    position: absolute;
+    opacity: .1;
+    text-align: center;
+    font-size: 5rem;
+    right: 0;
+    left: 0;
+    top: -30px;
+}
+
+section.review .carousel-indicators div.one {
+    background: url('../images/client-1.png');
+    background-size: cover;
+    background-position: center;
+    width: 80px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+section.review .carousel-indicators div.two {
+    background: url('../images/client-2.png');
+    background-size: cover;
+    background-position: center;
+    width: 80px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+section.review .carousel-indicators div.three {
+    background: url('../images/client-3.png');
+    background-size: cover;
+    background-position: center;
+    width: 80px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+section.review .carousel-indicators div.four {
+    background: url('../images/client-4.png');
+    background-size: cover;
+    background-position: center;
+    width: 80px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+section.review .carousel-indicators div.five {
+    background: url('../images/client-5.png');
+    background-size: cover;
+    background-position: center;
+    width: 80px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+section.review .carousel-indicators .active {
+    transform: scale(1.1);
+    transition: all .7s ease;
+}
+
+section.review .carousel-item p {
+    width: 40%;
+    margin: auto;
+    color: #777
+}
+
+section.touch span {
+    color: #999
+}
+
+section.touch i {
+    color: var(--main-color)
+}
+
+section.touch .info {
+    border-bottom: thin solid rgba(214, 206, 206, 0.37);
+}
+
+section.touch input,
+section.touch textarea {
+    border: thin solid rgba(214, 206, 206, 0.37);
+    margin-bottom: 3%;
+    padding: 2%;
+}
+
+section.touch input::placeholder {
+    color: rgba(161, 157, 157, 0.651)
+}
+
+section.touch textarea::placeholder {
+    color: rgba(161, 157, 157, 0.651)
+}
+
+section.touch button,
+section.touch button i {
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+footer {
+
+    background: #222;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-image: url(../images/dotted-map.png);
+
+    background-size: contain;
+}
+
+footer .up {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+
+
+footer h6{ border :thin solid #fff ;color: #999;font-size: .7rem; text-align: left;height: 1.9rem; line-height: 2rem; padding-left: .3rem;}
+footer h6:hover {color: var(--main-color); border:thin solid  #f25454 ; }
+
+.copy {
+    background-color: #1a1a1a;
+}
+
+.copy ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+    .copy{text-align: center;}
+    .copy ul, .copy p{width: 100%; margin: auto; }
+    section.team .d-flex button {margin: auto;}
+    section.team  .d-flex h3 { width: 100%; }
+
+    section.review .carousel-indicators div{visibility: hidden;}
+
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    html {
+        font-size: 16px;
+    }
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
